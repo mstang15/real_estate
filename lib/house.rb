@@ -1,4 +1,5 @@
 class House
+
   attr_reader :price, :address, :rooms
 
   def initialize(price, address)
@@ -42,10 +43,7 @@ class House
   end
 
   def other_list
-    @rooms.delete(basement_list)
-    @rooms.delete(bedroom_list)
-    @rooms.delete(living_room_list)
-    return @rooms
+    other = @rooms - basement_list - bedroom_list - living_room_list
   end
 
   def area
