@@ -65,7 +65,7 @@ class House
   end
 
   def rooms_by_category
-    category = {:bedroom => bedroom_list , :living_room => living_room_list , :basement => basement_list}
+    category = [{:bedroom=> bedroom_list,:living_room=>living_room_list,:basement=>basement_list}]
   end
 
 end
